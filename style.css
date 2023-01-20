@@ -1,0 +1,9 @@
+
+body{
+    background-color:blanchedalmond;
+    border:0px;
+}
+
+#attempts{
+    display:flex
+}

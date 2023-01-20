@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start">
+    <h1>Welcome to Random Number Guessing Game!</h1>
+    <ul>
+        <h2>How To Play/Rules:</h2>
+        <li>CPU will choose a <b>Random Number</b> between <b>1 & 100</b>.</li>
+        <li>You have to guess the number choosen by CPU.</li>
+        <li>You have 10 attempts to guess the number.</li>
+        <li>If your entered number is greater than the number you have to guess, it will show you the following message:<br>
+            <b>(Number is LOWER than the number you have entered!).</b>
+        </li>
+        <li>If your entered number is lower than the number you have to guess, it will show you the following message:<br>
+            <b>(Number is GREATER than the number you have entered!).</b>
+        </li>
+        <li>Initially your score will be 10.</li>
+        <li>Based on the number of attemps you take to guess the number , your score will be decided.<br>
+        </li>
+    </ul>
+    <h3>Click Start OR Press Enter When Your Are Ready To Play!</h3>
+    <button id="start-button">START</button>
+    </div>
+    
+    <div id="play" hidden> 
+        <h3><div id="attempts">
+            Attempts Left:<div id="value"></div>
+        </div></h3>
+        <h2>Enter the number:</h2>
+        <input id="input" type="number"><button id="submit">Submit</button><hr>
+        <b>Your History Will Appear Here:</b>
+        <div id="message"></div>
+        
+    </div>
+
+    <div id="win-page" hidden>
+        <h2>Congratulation! You Won! :)</h2>
+        <h3 id="wscore"></h3>
+        <h3>Press Enter or Click Play Again To Play Again!</h3>
+        <button id="playagainwin">Play Again</button>
+    </div>
+
+    <div id="lose-page" hidden>
+        <h2>You Lost! :(</h2>
+        <h3 id="reslose"></h3>
+        <h3>Press Enter or Click Play Again To Play Again!</h3>
+        <button id="playagainlose">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

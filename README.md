@@ -1,0 +1,1 @@
+A fun game about guessing the number choosen by CPU under given constraints or rule.
