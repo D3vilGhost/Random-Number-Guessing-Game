@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body >
     <div id="start">
-    <h1>Welcome to Random Number Guessing Game!</h1>
+    <h1 class="heading">Welcome to Random Number Guessing Game!</h1>
+    <h2 class="heading">How To Play/Rules:</h2>
     <ul>
-        <h2>How To Play/Rules:</h2>
         <li>CPU will choose a <b>Random Number</b> between <b>1 & 100</b>.</li>
         <li>You have to guess the number choosen by CPU.</li>
         <li>You have 10 attempts to guess the number.</li>
         <li>If your entered number is greater than the number you have to guess, it will show you the following message:<br>
-            <b>(Number is LOWER than the number you have entered!).</b>
+            (Number is LOWER than the number you have entered!).
         </li>
         <li>If your entered number is lower than the number you have to guess, it will show you the following message:<br>
-            <b>(Number is GREATER than the number you have entered!).</b>
+            (Number is GREATER than the number you have entered!).
         </li>
         <li>Initially your score will be 10.</li>
         <li>Based on the number of attemps you take to guess the number , your score will be decided.<br>
         </li>
     </ul>
-    <h3>Click Start OR Press Enter When Your Are Ready To Play!</h3>
-    <button id="start-button">START</button>
+    <h3 class="sb">Click Start OR Press Enter When Your Are Ready To Play!</h3>
+    <div class="sb"><button id="start-button">START</button></div>
     </div>
     
     <div id="play" hidden> 
@@ -36,7 +36,7 @@
             Attempts Left:<div id="value"></div>
         </div></h3>
         <h2>Enter the number:</h2>
-        <input id="input" type="number"><button id="submit">Submit</button><hr>
+        <input id="input" type="number"><hr id="hr1"><button id="submit">Submit</button><hr id="hr2">
         <b>Your History Will Appear Here:</b>
         <div id="message"></div>
         

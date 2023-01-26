@@ -2,7 +2,6 @@
 let x = 101, attempts = 10;
 //Home page
 function home(){
-    document.body.style.backgroundColor = "blanchedalmond";
     document.getElementById("win-page").hidden=true;
     document.getElementById("lose-page").hidden = true;
     document.getElementById("start").hidden = false;
@@ -30,24 +29,22 @@ function game() {
         document.getElementById("value").innerHTML = attempts;
         let d = document.createElement("div");
         d.innerHTML = `Number is GREATER than ${a}.`;
-        document.getElementById("message").append(d);
+        document.getElementById("message").prepend(d);
     }
     else if (a > x) {
         attempts--;
         document.getElementById("value").innerHTML = attempts;
         let d = document.createElement("div");
         d.innerHTML = `Number is LOWER than ${a}.`;
-        document.getElementById("message").append(d);
+        document.getElementById("message").prepend(d);
     }
     else {
-        document.body.style.backgroundColor = "rgb(47, 173, 47)";
-        document.getElementById("wscore").innerHTML = `Your Score: ${attempts}`;
+       document.getElementById("wscore").innerHTML = `Your Score: ${attempts}`;
         document.getElementById("play").hidden = true;
         document.getElementById("win-page").hidden = false;
     }
 
     if (attempts == 0) {
-        document.body.style.backgroundColor = "rgb(219, 52, 52)";
         document.getElementById("reslose").innerHTML = `The number was ${x}.`;
         document.getElementById("play").hidden = true;
         document.getElementById("lose-page").hidden = false;
